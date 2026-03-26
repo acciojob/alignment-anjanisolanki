@@ -1,1 +1,34 @@
 /*  your css code here. If applicable */
+/* General Table Styling to match the preview widths */
+table {
+    width: 100%;
+    border-collapse: separate; 
+}
+
+/* Gives empty cells structural height */
+td {
+    height: 25px; 
+}
+
+/* Required Classes */
+.middle {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+/* Background Color Classes */
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
