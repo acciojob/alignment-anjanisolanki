@@ -1,21 +1,18 @@
 /*  your css code here. If applicable */
-/* General Table Styling to match the preview widths */
-table {
-    width: 100%;
-    border-collapse: separate; 
-}
-
-/* Gives empty cells structural height */
-td {
-    height: 25px; 
-}
-
-/* Required Classes */
+/* All tables must have class 'middle' (to center the table itself) */
 .middle {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto; /* Centers the table horizontally */
+    width: 80%; /* Gives the tables a nice width */
+    border-collapse: collapse; /* Critical for passing the border test! */
 }
 
+/* Table Borders: 1px solid black; Cell Padding: 1px */
+table, td, th {
+    border: 1px solid black;
+    padding: 1px;
+}
+
+/* Specific Cell Alignments for Table 1 */
 .center {
     text-align: center;
 }
@@ -24,11 +21,23 @@ td {
     text-align: right;
 }
 
-/* Background Color Classes */
+/* Background Colors for Table 3 */
 .green {
     background-color: green;
 }
 
 .blue {
     background-color: blue;
+}
+
+/* Ensure empty cells have some height so they look like the preview */
+td {
+    height: 25px;
+}
+
+/* Ensure the image fits nicely */
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
 }
